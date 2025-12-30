@@ -13,7 +13,6 @@ export default function ScheduleSection() {
 
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
 
-            {/* KARTU 1: JALUR PRESTASI */}
             <div className="group relative bg-white rounded-3xl p-1 shadow-2xl shadow-slate-200/60 hover:shadow-blue-900/10 transition-shadow duration-300">
               <div className="absolute inset-0 bg-linear-to-b from-amber-50 to-white rounded-3xl opacity-50"></div>
               <div className="relative bg-white rounded-[20px] overflow-hidden border border-slate-100 h-full flex flex-col">
@@ -56,7 +55,6 @@ export default function ScheduleSection() {
               </div>
             </div>
 
-            {/* KARTU 2: JALUR REGULER */}
             <div className="group relative bg-white rounded-3xl p-1 shadow-2xl shadow-slate-200/60 hover:shadow-blue-900/10 transition-shadow duration-300">
                <div className="absolute inset-0 bg-linear-to-b from-cyan-50 to-white rounded-3xl opacity-50"></div>
                <div className="relative bg-white rounded-[20px] overflow-hidden border border-slate-100 h-full flex flex-col">
