@@ -18,6 +18,7 @@ export default function Navbar() {
                    src="/favicon.ico" 
                    alt="Logo MAN IC" 
                    fill
+                   priority
                    className="object-contain"
                  />
               </div>
@@ -43,13 +44,14 @@ export default function Navbar() {
             <button 
               className="md:hidden text-blue-950 p-1"
               onClick={() => setIsOpen(!isOpen)}
+              aria-label="Buka Menu Navigasi"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
 
           {isOpen && (
-            <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-white/95 backdrop-blur-xl border border-white/60 rounded-2xl shadow-xl flex flex-col gap-4 md:hidden border-t">
+            <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-white/95 backdrop-blur-xl border border-white/60 rounded-2xl shadow-xl flex flex-col gap-4 md:hidden border-t animate-menu-slide">
                <a href="#jadwal" onClick={() => setIsOpen(false)} className="text-slate-600 font-medium p-2 hover:bg-slate-50 rounded-lg">Jadwal Seleksi</a>
                <a href="#informasi" onClick={() => setIsOpen(false)} className="text-slate-600 font-medium p-2 hover:bg-slate-50 rounded-lg">Pusat Informasi</a>
                <a 

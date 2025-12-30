@@ -3,7 +3,7 @@ import { Phone, ExternalLink, Globe, Monitor, ArrowRight } from 'lucide-react';
 
 export default function InfoSection() {
   return (
-    <section id="informasi" className="mt-20 py-24 bg-linear-to-br from-blue-900 to-blue-950 text-white relative overflow-hidden">
+    <section id="informasi" className="py-24 bg-linear-to-br from-blue-900 to-blue-950 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-125 h-125 border border-white/5 rounded-full -mr-32 -mt-32"></div>
         <div className="absolute top-0 right-0 w-175 h-175 border border-white/5 rounded-full -mr-32 -mt-32"></div>
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-cyan-500/20 rounded-full blur-[100px]"></div>

@@ -5,6 +5,8 @@ import ScheduleSection from '@/components/ScheduleSection';
 import InfoSection from '@/components/InfoSection';
 import Footer from '@/components/Footer';
 import BackgroundEffects from '@/components/BackgroundEffects';
+import FAQSection from "@/components/FAQSection";
+import CountdownTimer from "@/components/CountdownTimer";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <div className="relative z-10">
         <HeroSection />
         <ScheduleSection />
+        <FAQSection />
+        <CountdownTimer />
         <InfoSection />
       </div>
       <Footer />

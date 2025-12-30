@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import FloatingContact from "@/components/FloatingContact";
 
 const playfair = Playfair_Display({ 
   subsets: ["latin"], 
@@ -31,6 +32,7 @@ export default function RootLayout({
         className={`${jakarta.variable} ${playfair.variable} antialiased font-sans`}
       >
         {children}
+        <FloatingContact />     
       </body>
     </html>
   );
