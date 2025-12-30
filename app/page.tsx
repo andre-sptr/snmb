@@ -17,7 +17,11 @@ export default function Home() {
         <HeroSection />
         <ScheduleSection />
         <FAQSection />
-        <CountdownTimer />
+        <CountdownTimer 
+          targetDateStr="2026-02-07T23:59:59" 
+          title="Hitung Mundur Pendaftaran"
+          subTitle="Segera persiapkan berkas terbaikmu dan bergabunglah bersama kami."
+        />
         <InfoSection />
       </div>
       <Footer />

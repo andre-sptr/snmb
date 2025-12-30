@@ -62,9 +62,9 @@ export default function FAQSection() {
                 {faq.question}
               </span>
               {openIndex === index ? (
-                <ChevronUp className="text-blue-600 flex-shrink-0" />
+                <ChevronUp className="text-blue-600 shrink-0" />
               ) : (
-                <ChevronDown className="text-slate-400 flex-shrink-0" />
+                <ChevronDown className="text-slate-400 shrink-0" />
               )}
             </button>
             

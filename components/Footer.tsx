@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import { MapPin, Instagram, Youtube, Facebook, Mail, ExternalLink } from 'lucide-react';
+import Link from 'next/link';
+import { MapPin, Instagram, Youtube, Facebook } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -14,22 +15,22 @@ export default function Footer() {
           <div className="grid md:grid-cols-3 gap-12 lg:gap-20 mb-16">
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 relative grayscale opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+                <div className="w-12 h-12 relative opacity-100 transition-all duration-500">
                   <Image src="/favicon.ico" alt="Logo MAN IC" fill className="object-contain" />
                 </div>
                 <div>
-                  <h3 className="text-white font-serif font-bold text-xl leading-none tracking-tight">MAN IC Siak</h3>
+                  <h3 className="text-white font-serif font-bold text-xl leading-none tracking-tight">MAN Insan Cendekia Siak</h3>
                   <p className="text-[10px] font-bold text-blue-500 uppercase tracking-[0.2em] mt-1.5">Kampus Prestasi</p>
                 </div>
               </div>
-              <p className="text-sm leading-relaxed text-slate-400/90 max-w-sm">
-                Mewujudkan sumber daya manusia yang berkualitas tinggi dalam keimanan dan ketaqwaan, serta menguasai ilmu pengetahuan dan teknologi.
+              <p className="text-sm leading-relaxed text-slate-400/90 max-w-sm text-justify">
+                Berkomitmen mencetak generasi unggul yang menyeimbangkan kecerdasan intelektual dan spiritual, berakhlak mulia, serta siap bersaing di kancah global dengan landasan iman yang kokoh demi kemajuan bangsa.
               </p>
               <div className="flex items-start gap-3 text-sm mt-6 text-slate-400 group">
                 <div className="p-2 rounded-full bg-blue-900/20 text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-colors shrink-0">
                   <MapPin size={16} />
                 </div>
-                <span className="leading-relaxed pt-1">Jl. Pemda, Kp. Perawang Barat, Kec. Tualang, Kabupaten Siak, Riau 28772</span>
+                <span className="leading-relaxed pt-1">Jl. Pemda KM 11, Perawang Barat, Kec. Tualang, Kabupaten Siak, Riau 28685</span>
               </div>
             </div>
 
@@ -45,7 +46,7 @@ export default function Footer() {
                       <span className="text-xs text-slate-500">Instagram Official</span>
                   </div>
                 </a>
-                <a href="https://youtube.com" target="_blank" className="flex items-center gap-4 group p-2 -ml-2 rounded-lg hover:bg-white/5 transition-all">
+                <a href="https://youtube.com/@manicsiakofficial" target="_blank" className="flex items-center gap-4 group p-2 -ml-2 rounded-lg hover:bg-white/5 transition-all">
                   <div className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 group-hover:bg-red-600 group-hover:text-white group-hover:border-red-500 transition-all shadow-lg">
                     <Youtube size={18} />
                   </div>
@@ -54,7 +55,7 @@ export default function Footer() {
                       <span className="text-xs text-slate-500">Youtube Channel</span>
                   </div>
                 </a>
-                <a href="https://facebook.com" target="_blank" className="flex items-center gap-4 group p-2 -ml-2 rounded-lg hover:bg-white/5 transition-all">
+                <a href="https://facebook.com/manicsiak" target="_blank" className="flex items-center gap-4 group p-2 -ml-2 rounded-lg hover:bg-white/5 transition-all">
                   <div className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-500 transition-all shadow-lg">
                     <Facebook size={18} />
                   </div>
@@ -67,33 +68,37 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="text-white font-bold mb-8 text-sm uppercase tracking-widest border-l-2 border-amber-500 pl-3">Hubungi Panitia</h4>
-              <div className="space-y-6 text-sm">
-                <a href="mailto:humas@manicsiak.sch.id" className="flex items-center gap-3 text-slate-400 hover:text-blue-400 transition-colors group">
-                  <div className="p-2 rounded-lg bg-slate-900 group-hover:bg-blue-900/30 transition-colors">
-                      <Mail size={18} />
-                  </div>
-                  <span className="font-medium">humas@manicsiak.sch.id</span>
-                </a>
+              <h4 className="text-white font-bold mb-8 text-sm uppercase tracking-widest border-l-2 border-amber-500 pl-3">Lokasi Kami</h4>
+              <div className="w-full h-64 rounded-2xl overflow-hidden border border-slate-800 shadow-2xl relative group">
+                <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500/50 rounded-2xl transition-colors pointer-events-none z-10"></div>
                 
-                <div className="p-6 rounded-2xl bg-linear-to-br from-slate-900 to-slate-900/50 border border-slate-800 shadow-xl relative overflow-hidden group">
-                    <div className="absolute top-0 right-0 w-20 h-20 bg-blue-500/10 rounded-full blur-xl -mr-10 -mt-10 group-hover:bg-blue-500/20 transition-all"></div>
-                    <p className="text-xs text-slate-500 mb-3 uppercase tracking-wider font-semibold">Pusat Bantuan</p>
-                    <a href="https://snmb-madrasah.kemenag.go.id" className="text-white hover:text-blue-400 font-bold text-sm flex items-center gap-2 transition-colors">
-                      helpdesk.snmb@kemenag.go.id <ExternalLink size={14} className="text-blue-500"/>
-                    </a>
-                    <p className="text-[10px] text-slate-600 mt-2">Senin - Jumat (08.00 - 16.00 WIB)</p>
-                </div>
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.5326127905546!2d101.5636605!3d0.6856847999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d44e5c7392bc85%3A0x90f4a1e1a9464d9b!2sMAN%20Insan%20Cendekia%20Siak!5e0!3m2!1sid!2sid!4v1767089661722!5m2!1sid!2sid"
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen={true} 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="transition-all duration-700"
+                ></iframe>
               </div>
             </div>
           </div>
 
           <div className="pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-slate-500">
-            <p>© {new Date().getFullYear()} MAN Insan Cendekia Siak. Developed with Pride.</p>
+            <p>© {new Date().getFullYear()} MAN Insan Cendekia Siak.</p>
             <div className="flex gap-8">
-              <span className="hover:text-blue-400 cursor-pointer transition-colors">Privacy Policy</span>
-              <span className="hover:text-blue-400 cursor-pointer transition-colors">Terms of Service</span>
-              <span className="hover:text-blue-400 cursor-pointer transition-colors">Sitemap</span>
+              <Link 
+                href="/juknis" 
+                className="hover:text-blue-400 cursor-pointer transition-colors flex items-center gap-2"
+              >
+                Juknis Pendaftaran
+              </Link>
+              
+              <a href="https://snmb-madrasah.kemenag.go.id" target="_blank" className="hover:text-blue-400 cursor-pointer transition-colors">
+                Link Pendaftaran
+              </a>
             </div>
           </div>
 

@@ -17,7 +17,7 @@ export default function InfoSection() {
                 <div className="h-1 w-16 bg-amber-400 rounded-full"></div>
               </div>
               <p className="text-blue-100/90 leading-relaxed text-lg">
-                Dapatkan update resmi dan berdiskusi dengan panitia serta calon wali murid lainnya melalui kanal resmi kami.
+                Dapatkan update resmi dan berdiskusi dengan panitia serta calon wali murid lainnya melalui channel resmi kami.
               </p>
               
               <div className="space-y-4">
@@ -28,7 +28,7 @@ export default function InfoSection() {
                   </div>
                   <div>
                     <h4 className="font-bold text-white text-lg">Grup WhatsApp</h4>
-                    <p className="text-xs text-emerald-200">Diskusi SNMB 2026</p>
+                    <p className="text-xs text-emerald-200">SNMB MAN IC SIAK TAHUN 2026</p>
                   </div>
                   <ExternalLink className="ml-auto text-emerald-400 group-hover:text-white transition-colors" size={20}/>
                 </a>
